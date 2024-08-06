@@ -1,19 +1,59 @@
 project:
   type: website
+  title: "Изследване на публичната администрация в България"
+
+author: "Ивайло Спасов"
 
 website:
-  title: "ivaylospasov.eu"
+  title: "Изследване на публичната администрация в България"
+  description: "Анализ на различни аспекти от работата на публичната администрация в България"
+  cookie-consent: false
   navbar:
+    title: "Изследване на ПА"
+    pinned: true
     left:
-      - href: index.qmd
-        text: Home
-      - about.qmd
+      - text: Начало
+        href: index.qmd
+      - text: За проекта
+        href: about.qmd
+      - text: Анализи
+        href: analysis.qmd
+  sidebar:
+    - title: "Анализи"
+      style: floating
+      collapse-level: 1
+      contents: 
+        - analysis.qmd
+        - section: "Електронни услуги"
+          href: e-uslugi/index.qmd
+  site-url: https://research.isspasov.bg
+  twitter-card: true
+  page-footer: "Copyright 2024, Ивайло Спасов" 
+
+lang: bg
+
+language: 
+  bg:
+    title-block-author-single: "Автор"
+    crossref-fig-title: "Фигура"
+    crossref-tbl-title: "Таблица"
+    section-title-footnotes: "Бележки под линия"
+    toc-title-website: "На тази страница"
 
 format:
   html:
     theme: cosmo
+    #fontsize: 1.1em
     css: styles.css
     toc: true
+    link-external-newwindow: true
+    #df-print: paged
+    embed-resources: false
+    self-contained-math: false
+    code-fold: false
 
-
-
+execute: 
+  echo: false
+  warning: false
+  freeze: auto
+  cache: false
