@@ -163,8 +163,4 @@ cython_debug/
 
 /.quarto/
 
-# Rendered website
-/_site/
-/_site
-_site
-_site/
+
