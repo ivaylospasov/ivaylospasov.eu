@@ -16,16 +16,16 @@ website:
         href: index.qmd
       - text: За проекта
         href: about.qmd
-      - text: Анализи
-        href: analysis.qmd
+      - text: Изследвания
+        href: research.qmd
   sidebar:
-    - title: "Анализи"
+    - title: "Изследвания"
       style: floating
       collapse-level: 1
       contents: 
-        - analysis.qmd
-        - section: "Електронни услуги"
-          href: e-uslugi/index.qmd
+        - research.qmd
+        #- section: "Електронни услуги"
+        #  href: e-uslugi/index.qmd
   site-url: https://research.isspasov.bg
   twitter-card: true
   page-footer: "Copyright 2024, Ивайло Спасов" 
@@ -57,3 +57,5 @@ execute:
   warning: false
   freeze: auto
   cache: false
+
+notebook-links: global
