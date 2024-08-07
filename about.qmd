@@ -5,7 +5,6 @@ title: "За проекта"
 ```{python}
 #| label: libraries
 import pandas as pd
-from pprint import pprint
 ```
 
 ## Голямото защо?
